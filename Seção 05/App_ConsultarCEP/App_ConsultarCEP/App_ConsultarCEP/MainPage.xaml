@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App_ConsultarCEP"
+             x:Class="App_ConsultarCEP.MainPage">
+    <!-- Stack = pilha, aqui empilhamos os elementos na tela -->
+    <StackLayout  Padding="30" Spacing="30"> 
+        <Image Source="Logo.png" x:Name="imgLogo"/>
+        <Entry x:Name="EtCep" Placeholder="Digite o cep: " Keyboard="Numeric"/>
+        <Button x:Name="btnCep" Text="BUSCAR CEP" Clicked="BtnCep_Clicked"/>
+
+        <!-- Place new controls here -->
+    	<Label Text="" x:Name="lblResultado"
+          />
+    </StackLayout>
+
+</ContentPage>
